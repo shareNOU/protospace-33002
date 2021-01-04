@@ -1,4 +1,4 @@
-#　テーブル設計
+# テーブル設計
 
 ## usersテーブル
 
@@ -27,7 +27,7 @@
 
 ### Association
 
-- belongs_to :users
+- belongs_to :user
 - has_many :comments
 
 ## commentsテーブル
@@ -40,5 +40,5 @@
 
 ### Association
 
-- belongs_to :users
-- belongs_to :prototypes
+- belongs_to :user
+- belongs_to :prototype
