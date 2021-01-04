@@ -1,5 +1,6 @@
 class PrototypesController < ApplicationController
   def index
+    @prototypes = Prototype.includes(:user)
   end
 
   def new
@@ -13,7 +14,6 @@ class PrototypesController < ApplicationController
     else
       render :new
     end
-
   end
 
   private
